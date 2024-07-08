@@ -3,18 +3,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../media/carshowroom2.jpg') no-repeat center center fixed;
+    background: url('../media/download.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
 }
 
 header {
     background: rgba(0, 0, 0, 0.7);
-    padding: 1em 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 header h1 {
@@ -27,7 +22,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 2em;
 }
 
@@ -46,41 +41,68 @@ nav ul li a {
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 80vh;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+main {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2em;
     border-radius: 10px;
-    margin: 20px;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 footer {
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 footer p {
     margin: 0;
+}
+
+form .form-label, form .form-control {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
