@@ -15,6 +15,17 @@ header {
     top: 0;
     z-index: 1000;
 }
+.btn-danger {
+    color: #fff; /* Цвят на текста - бял */
+    background-color: #1d1a1a; /* Фонов цвят на бутона - сив */
+    border-color: #000000; /* Цвят на рамката на бутона - сив */
+}
+
+.btn-danger:hover {
+    background-color: #495057; /* Сив фон при ховър */
+    border-color: #495057; /* Сива рамка при ховър */
+}
+
 
 header h1 {
     margin: 0;
@@ -26,7 +37,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 2em;
 }
 
@@ -45,12 +56,11 @@ nav ul li a {
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-
 }
 
 .logo-link {
-text-decoration: none;
-    }
+    text-decoration: none;
+}
 
 .logo {
     width: 150px;
@@ -63,11 +73,47 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80vh;
+    height: 80vh; /* Връщане на оригиналната височина */
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+}
+
+
+
+.special-border {
+    border: 5px solid rgb(241, 234, 241);
+}
+
+div.izbutani {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: srgb(247, 244, 247)etween;
+    flex-wrap: wrap;
+}
+
+div.izbutani > div.card {
+    min-width: 1rem;
+    margin: 0.5rem;
+   
+}
+
+div.card > img {
+    height: 10rem; /* Намалена височина на изображението */
+}
+
+div.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Подбираме цвят, който се съчетава с основните цветове */
+    color: #fff; /* Текстът остава бял за контраст */
+    border: 1px solid #fff; /* Подчертаваме картите с бяла рамка */
+}
+
+div.card:hover {
+    -webkit-box-shadow: inset 0px 0px 54px -8px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: inset 0px 0px 54px -8px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 0px 54px -8px rgba(255, 255, 255, 0.5);
+    border: 3px solid rgb(217, 214, 210);
 }
 
 .hero h2 {

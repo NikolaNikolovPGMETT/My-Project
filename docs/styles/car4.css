@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../media/carshowroom2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-details h3,
+.car-details p {
+    color: #000; /* Черен текст */
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.details-and-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-image,
+.car-info {
+    flex: 1 1 100%;
+}
+
+.video {
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .car-image,
+    .car-info,
+    .video {
+        flex: 5;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
